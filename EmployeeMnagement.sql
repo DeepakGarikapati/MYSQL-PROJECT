@@ -1,5 +1,5 @@
 
---  EMPLOYEE MANAGEMENT
+--===============================  EMPLOYEE MANAGEMENT=================================
 CREATE DATABASE IF NOT EXISTS EmployeeDB;
 USE EmployeeDB;
 
@@ -131,7 +131,7 @@ FROM Employee
 ORDER BY salary DESC
 LIMIT 3;
 
--- CUSTOMERS AND ORDERS
+--======================================= CUSTOMERS AND ORDERS=========================================
 CREATE DATABASE IF NOT EXISTS CustomerOrdersDB;
 USE CustomerOrdersDB;
 
@@ -342,7 +342,7 @@ GROUP BY c.customer_id, c.customer_name
 HAVING COUNT(o.order_id) > 2
    AND SUM(o.amount) > 8000;
 
--- STUDENTS MANAGEMENT
+-- =======================================STUDENTS MANAGEMENT============================
 CREATE DATABASE IF NOT EXISTS StudentsDB;
 USE StudentsDB;
 
